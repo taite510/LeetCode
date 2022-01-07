@@ -12,14 +12,8 @@
 var maxCoins = function(piles) {
   let coins = 0;
   piles = piles.sort((a, b) => b - a)
-  // while (piles.length > 0) {
-  //   coins += piles[1];
-  //   piles.splice(0, 2)
-  //   piles.splice(piles.length - 1, 1)
-  // }
   for (let i = 0; i < piles.length / 3; i++) {
     coins += piles[2 * i + 1]
-    console.log(coins)
   }
   return coins
 };
