@@ -9,18 +9,16 @@ var rotate = function(matrix) {
   }
   for (let i = 0; i < n; i++) {
     for (let j = n - (i + 1); j >= 0; j--) {
-      // let temp = matrix[i][j];
-      // matrix[i][j] = matrix[n - (i + 1)][j];
-      // matrix[n - (i + 1)][j] = temp
       [matrix[i][j], matrix[j][n - (i + 1)]] = [matrix[j][n - (i + 1)], matrix[i][j]];
     }
   }
-  for (let i = 1; i < n - 1; i++) {
-    [matrix[i][0], matrix[n - 1][i]] = [matrix[n - 1][i], matrix[i][0]]
+  for (let i = 0; i < (n - 2) / 2; i++) {
+    for (let j = i + 1; j < n - (i + 1); j++) {
+      [matrix[j][i], matrix[n - (i + 1)][j]] = [matrix[n - (i + 1)][j], matrix[j][i]];
+    }
   }
-  console.log(matrix)
   return
 };
 
-let testMatrix = [[1]]
+let testMatrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
 rotate(testMatrix)
