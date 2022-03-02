@@ -4,20 +4,20 @@
 
 var findLucky = function(arr) {
   let obj = {};
-  let largestLuckyNum = -Infinity
+  let largestLuckyNum = -Infinity;
   for (let i = 0; i < arr.length; i++) {
     obj[arr[i]] ? obj[arr[i]]++ : obj[arr[i]] = 1;
   }
   console.log(obj)
   for (let key in obj) {
     if (key == obj[key] && key > largestLuckyNum) {
-      largestLuckyNum = obj[key]
+      largestLuckyNum = obj[key];
     }
   }
   if (largestLuckyNum === -Infinity) {
-    return -1
+    return -1;
   }
-  return largestLuckyNum
+  return largestLuckyNum;
 };
 
 let testArr = [2,2,2,3,3]
