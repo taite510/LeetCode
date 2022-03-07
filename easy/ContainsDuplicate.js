@@ -6,10 +6,10 @@ var containsDuplicate = function(nums) {
     if (obj[nums[i]] === undefined) {
       obj[nums[i]] = true;
     } else {
-      return true
+      return true;
     }
   }
-  return false
+  return false;
 };
 
 console.log(containsDuplicate([1,2,3,4,2]))
