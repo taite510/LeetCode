@@ -11,7 +11,6 @@ import math
 def distributeCandies(candies, num_people) :
   n = math.floor((-1 + math.sqrt(1 - (4 * (-candies * 2)))) / 2)
   remainderCandies = candies - (n * (n + 1) // 2)
-  print(remainderCandies)
   rounds = n // num_people
   remainderRounds = n - (rounds * num_people)
   i = 1
