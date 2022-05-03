@@ -4,8 +4,8 @@
 
 // Return the letter that was added to t.
 
-var findTheDifference = function(s, t) {
-  let obj = {};
+const findTheDifference = function(s, t) {
+  const obj = {};
   for (let i = 0; i < s.length; i++) {
     obj[s[i]] ? obj[s[i]]++ : obj[s[i]] = 1;
   }
@@ -23,7 +23,7 @@ var findTheDifference = function(s, t) {
   return Object.keys(obj)[0];
 };
 
-let testS = 'abcd';
-let testT = 'abcda';
+const testS = 'abcd';
+const testT = 'abcda';
 
 console.log(findTheDifference(testS, testT))

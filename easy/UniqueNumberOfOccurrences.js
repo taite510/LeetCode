@@ -1,12 +1,12 @@
 // Given an array of integers arr, return true if the number of occurrences of each value in the array is unique, or false otherwise.
 
-var uniqueOccurrences = function(arr) {
-  let [obj, occurArr] = [{}, []];
+const uniqueOccurrences = function(arr) {
+  const [obj, occurArr] = [{}, []];
   for (let i = 0; i < arr.length; i++) {
     obj[arr[i]] ? obj[arr[i]]++ : obj[arr[i]] = 1;
   }
   for (key in obj) {
-    let occurrences = obj[key]
+    const occurrences = obj[key]
     if (occurArr.indexOf(occurrences) === -1) {
       occurArr.push(occurrences);
     } else {

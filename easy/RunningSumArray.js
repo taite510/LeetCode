@@ -2,7 +2,7 @@
 
 // Return the running sum of nums.
 
-var runningSum = function(nums) {
+const runningSum = function(nums) {
   for (let i = 1; i < nums.length; i++) {
     nums[i] = nums[i] + nums[i - 1];
   }

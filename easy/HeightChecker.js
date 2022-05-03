@@ -6,8 +6,8 @@
 
 // Return the number of indices where heights[i] != expected[i].
 
-var heightChecker = function(heights) {
-  let originalHeights = [...heights]
+const heightChecker = function(heights) {
+  const originalHeights = [...heights]
   heights.sort((a, b) => a - b);
   let count = 0;
   for (let i = 0; i < heights.length; i++) {

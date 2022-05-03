@@ -6,21 +6,21 @@ function ListNode(val, next) {
 }
 
 
-var reverseList = function(head) {
+const reverseList = function(head) {
   let previousNode = null;
   let nextNode = null;
   let currentNode = head;
   while (currentNode !== null) {
-    nextNode = currentNode.next
-    currentNode.next = previousNode
-    previousNode = currentNode
-    currentNode = nextNode
+    nextNode = currentNode.next;
+    currentNode.next = previousNode;
+    previousNode = currentNode;
+    currentNode = nextNode;
   }
-  return previousNode
+  return previousNode;
 };
 
-let node1 = new ListNode(1)
-let node2 = new ListNode(2, node1)
-let node3 = new ListNode(3, node2)
+const node1 = new ListNode(1)
+const node2 = new ListNode(2, node1)
+const node3 = new ListNode(3, node2)
 
 console.log(reverseList(node3))

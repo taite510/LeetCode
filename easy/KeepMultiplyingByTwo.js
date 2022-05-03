@@ -7,8 +7,8 @@
 // Repeat this process with the new number as long as you keep finding the number.
 // Return the final value of original.
 
-var findFinalValue = function(nums, original) {
-  let obj = {};
+const findFinalValue = function(nums, original) {
+  const obj = {};
   for (let i = 0; i < nums.length; i++) {
     obj[nums[i]] = true;
   }

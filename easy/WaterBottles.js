@@ -4,9 +4,9 @@
 
 // Given the two integers numBottles and numExchange, return the maximum number of water bottles you can drink.
 
-var numWaterBottles = function(numBottles, numExchange) {
+const numWaterBottles = function(numBottles, numExchange) {
   let total = 0;
-  let func = (full, empty) => {
+  const func = (full, empty) => {
     total += full
     empty += full
     full = Math.floor(empty / numExchange)
@@ -19,6 +19,6 @@ var numWaterBottles = function(numBottles, numExchange) {
   return total
 };
 
-let testNumBottles = 9;
-let testNumExchange = 3;
+const testNumBottles = 9;
+const testNumExchange = 3;
 console.log(numWaterBottles(testNumBottles, testNumExchange))

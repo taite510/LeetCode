@@ -4,7 +4,7 @@
 
 // Return the maximum number of words that appear in a single sentence.
 
-var mostWordsFound = function(sentences) {
+const mostWordsFound = function(sentences) {
   let maxNum = 0;
   for (let i = 0; i < sentences.length; i++) {
     let temp = sentences[i].split(' ');

@@ -5,8 +5,8 @@
 // Open brackets must be closed by the same type of brackets.
 // Open brackets must be closed in the correct order.
 
-var isValid = function(s) {
-  let arr = [];
+const isValid = function(s) {
+  const arr = [];
   for (let i = 0; i < s.length; i++) {
     if (s[i] === '(') {
       arr.push(s[i])

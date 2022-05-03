@@ -7,7 +7,7 @@
 // ruleKey == "name" and ruleValue == namei.
 // Return the number of items that match the given rule.
 
-var countMatches = function(items, ruleKey, ruleValue) {
+const countMatches = function(items, ruleKey, ruleValue) {
   let [count, obj] = [0, {'type': 0, 'color': 1, 'name': 2}];
   for (let i = 0; i < items.length; i++) {
     if (items[i][obj[ruleKey]] === ruleValue) {

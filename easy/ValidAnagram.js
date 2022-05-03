@@ -2,7 +2,7 @@
 
 // An Anagram is a word or phrase formed by rearranging the obj[s[i]]s of a different word or phrase, typically using all the original obj[s[i]]s exactly once.
 
-var isAnagram = function(s, t) {
+const isAnagram = function(s, t) {
   if (s.length !== t.length) {
     return false
   }
@@ -19,13 +19,13 @@ var isAnagram = function(s, t) {
   return t.length === 0
 };
 
-let testStr1 = 'aacc';
-let testStr2 = 'ccac';
+const testStr1 = 'aacc';
+const testStr2 = 'ccac';
 
 console.log(isAnagram(testStr1, testStr2))
 
-var isAnagram2 = function(s, t) {
-  let obj = {};
+const isAnagram2 = function(s, t) {
+  const obj = {};
   if (s.length !== t.length) {
     return false;
   }

@@ -2,8 +2,8 @@
 
 // Return an array where the ith element is the final price you will pay for the ith item of the shop considering the special discount.
 
-var finalPrices = function(prices) {
-  let arr = [];
+const finalPrices = function(prices) {
+  const arr = [];
   for (let i = 0; i < prices.length; i++) {
     let j = i + 1;
     let newPrice = prices[i];
@@ -14,7 +14,7 @@ var finalPrices = function(prices) {
       }
       j++;
     };
-    arr.push(newPrice)
+    arr.push(newPrice);
   }
   return arr;
 };
