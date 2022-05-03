@@ -2,8 +2,8 @@
 
 // A lucky number is an element of the matrix such that it is the minimum element in its row and maximum in its column.
 
-var luckyNumbers  = function(matrix) {
-  let nums = [];
+const luckyNumbers  = function(matrix) {
+  const nums = [];
   for (let i = 0; i < matrix.length; i++) {
     let currentMin = Infinity
     let currentIndex

@@ -8,8 +8,8 @@
 
 // Return an array (of length num_people and sum candies) that represents the final distribution of candies.
 
-var distributeCandies = function(candies, num_people) {
-  let resArr = [];
+const distributeCandies = function(candies, num_people) {
+  const resArr = [];
   let candyCounter = 1;
   for (let i = 0; i < num_people; i++) {
     resArr.push(0);
@@ -29,6 +29,6 @@ var distributeCandies = function(candies, num_people) {
   return resArr;
 };
 
-let testCandies = 10
-let testNumPeople = 3
+const testCandies = 10
+const testNumPeople = 3
 console.log(distributeCandies(testCandies, testNumPeople))

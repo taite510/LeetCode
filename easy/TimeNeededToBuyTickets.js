@@ -6,7 +6,7 @@
 
 // Return the time taken for the person at position k (0-indexed) to finish buying tickets.
 
-var timeRequiredToBuy = function(tickets, k) {
+const timeRequiredToBuy = function(tickets, k) {
   let time = 0;
   for(let i = 0; tickets[k] !== 0; i++) {
     if (i >= tickets.length) {
@@ -20,7 +20,7 @@ var timeRequiredToBuy = function(tickets, k) {
   return time;
 };
 
-let testTickets = [5,1,1,1]
-let testK = 2
+const testTickets = [5,1,1,1]
+const testK = 2
 
 console.log(timeRequiredToBuy(testTickets, testK))

@@ -2,7 +2,7 @@
 
 // If there is no common prefix, return an empty string "".
 
-var longestCommonPrefix = function(strs) {
+const longestCommonPrefix = function(strs) {
   let prefix = '';
   if (strs.length === 1) {
     return strs[0]

@@ -4,13 +4,13 @@
 
 // Return an m x n 2D array constructed according to the above procedure, or an empty 2D array if it is impossible.
 
-var construct2DArray = function(original, m, n) {
-  let resArr = [];
+const construct2DArray = function(original, m, n) {
+  const resArr = [];
   if (m * n < original.length) {
     return resArr;
   }
   for (let i = 0; i < m; i++) {
-    let arr = [];
+    const arr = [];
     for (let j = 0; j < n; j++) {
       if(original.length > 0) {
         arr.push(original.splice(0,1)[0]);

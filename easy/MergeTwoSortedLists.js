@@ -4,8 +4,8 @@
 
 // Return the head of the merged linked list.
 
-var mergeTwoLists = function(list1, list2) {
-  let arr = [];
+const mergeTwoLists = function(list1, list2) {
+  const arr = [];
   let temp = list1;
   if (!list1 && !list2) {
     return {};

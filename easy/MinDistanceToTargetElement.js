@@ -4,7 +4,7 @@
 
 // It is guaranteed that target exists in nums.
 
-var getMinDistance = function(nums, target, start) {
+const getMinDistance = function(nums, target, start) {
   let position;
   let i = 1;
   if (nums[start] === target) {

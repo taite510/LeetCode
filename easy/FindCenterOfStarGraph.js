@@ -6,8 +6,8 @@
 
 // Return the center of the given star graph.
 
-var findCenter = function(edges) {
-  let obj = {}
+const findCenter = function(edges) {
+  const obj = {}
   for (let i = 0; i < edges.length; i++) {
       if (obj[edges[i][0]]) {
           return edges[i][0];

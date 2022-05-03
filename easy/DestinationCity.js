@@ -4,11 +4,11 @@
 
 // It is guaranteed that the graph of paths forms a line without any loop, therefore, there will be exactly one destination city.
 
-var destCity = function(paths) {
+const destCity = function(paths) {
   let result
   let currentDest = paths[0][1];
   //paths.splice(0, 1);
-  let findDestCity = (paths, nextCity) => {
+  const findDestCity = (paths, nextCity) => {
     let foundCity = false;
     for (let i = 0; i < paths.length; i++) {
       if (paths[i][0] === nextCity) {
@@ -27,6 +27,6 @@ var destCity = function(paths) {
   return result;
 };
 
-let testPaths = [["B","C"],["A", "E"],["D","B"],["C","A"]];
+const testPaths = [["B","C"],["A", "E"],["D","B"],["C","A"]];
 
 console.log(destCity(testPaths))

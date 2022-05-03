@@ -8,7 +8,7 @@
 
 // You are given two integer arrays students and sandwiches where sandwiches[i] is the type of the i​​​​​​th sandwich in the stack (i = 0 is the top of the stack) and students[j] is the preference of the j​​​​​​th student in the initial queue (j = 0 is the front of the queue). Return the number of students that are unable to eat.
 
-var countStudents = function(students, sandwiches) {
+const countStudents = function(students, sandwiches) {
   let count = 0;
   while (students.length > 0 && count < students.length) {
     if (students[0] === sandwiches[0]) {
@@ -26,7 +26,7 @@ var countStudents = function(students, sandwiches) {
 
 
 
-let testStudents = [1,1,0,0]
-let testSandwiches = [0,1,0,1]
+const testStudents = [1,1,0,0]
+const testSandwiches = [0,1,0,1]
 
 console.log(countStudents(testStudents, testSandwiches))

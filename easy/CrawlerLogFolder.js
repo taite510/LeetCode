@@ -11,10 +11,10 @@
 
 // Return the minimum number of operations needed to go back to the main folder after the change folder operations.
 
-var minOperations = function(logs) {
+const minOperations = function(logs) {
   let positionCounter = 0;
   for (let i = 0; i < logs.length; i++) {
-    let log = logs[i];
+    const log = logs[i];
     if (log === '../' && positionCounter > 0) {
       positionCounter--;
     } else if (log[log.length - 2] !== '.') {
@@ -25,5 +25,5 @@ var minOperations = function(logs) {
 };
 
 
-let testLogs = ["d1/","d2/","./","d3/","../","d31/"];
+const testLogs = ["d1/","d2/","./","d3/","../","d31/"];
 console.log(minOperations(testLogs))

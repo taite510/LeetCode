@@ -3,8 +3,8 @@
 // A word is a maximal substring consisting of non-space characters only.
 
 
-var lengthOfLastWord = function(s) {
-  let arr = s.split(' ');
+const lengthOfLastWord = function(s) {
+  const arr = s.split(' ');
   for (let i = arr.length - 1; i >= 0; i--) {
     if (arr[i] !== '') {
       return arr[i].length
@@ -14,5 +14,5 @@ var lengthOfLastWord = function(s) {
 
 
 
-let string = "luffy       is  still   joyboy    hmm           "
+const string = "luffy       is  still   joyboy    hmm           "
 console.log(lengthOfLastWord(string))

@@ -6,16 +6,16 @@
 // position[i] + 1 or position[i] - 1 with cost = 1.
 // Return the minimum cost needed to move all the chips to the same position.
 
-var minCostToMoveChips = function(position) {
-  let [odd, even] = [0,0]
+const minCostToMoveChips = function(position) {
+  let [odd, even] = [0,0];
   for (let i = 0; i < position.length; i++) {
     if (position[i] % 2 === 0) {
-      even++
+      even++;
     } else {
-      odd++
+      odd++;
     }
   }
-  return Math.min(odd, even)
+  return Math.min(odd, even);
 };
 
 console.log(minCostToMoveChips([1,1000000000]))

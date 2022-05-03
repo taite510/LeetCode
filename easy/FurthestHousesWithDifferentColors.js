@@ -6,7 +6,7 @@
 
 // The distance between the ith and jth houses is abs(i - j), where abs(x) is the absolute value of x.
 
-var maxDistance = function(colors) {
+const maxDistance = function(colors) {
   let distance = 1
   for (let i = 0; i < colors.length; i++) {
     for (let j = colors.length - 1; j > i; j--) {

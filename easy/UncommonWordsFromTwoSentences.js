@@ -4,12 +4,12 @@
 
 // Given two sentences s1 and s2, return a list of all the uncommon words. You may return the answer in any order.
 
-var uncommonFromSentences = function(s1, s2) {
-  let wordBank = {};
-  let resArr = [];
+const uncommonFromSentences = function(s1, s2) {
+  const wordBank = {};
+  const resArr = [];
   s1 = s1.split(' ');
   s2 = s2.split(' ');
-  let addToWorkBank = function(sentence) {
+  const addToWorkBank = function(sentence) {
     sentence.forEach(word => {
       if (wordBank[word] === undefined) {
         wordBank[word] = 1;
@@ -30,7 +30,7 @@ var uncommonFromSentences = function(s1, s2) {
 
 
 
-let testSentence1 = "apple apple";
-let testSentence2 = "banana";
+const testSentence1 = "apple apple";
+const testSentence2 = "banana";
 
 console.log(uncommonFromSentences(testSentence1, testSentence2))

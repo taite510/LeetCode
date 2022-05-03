@@ -6,8 +6,8 @@
 // a < b
 // b - a equals to the minimum absolute difference of any two elements in arr
 
-var minimumAbsDifference = function(arr) {
-  let obj = {};
+const minimumAbsDifference = function(arr) {
+  const obj = {};
   let diff = Infinity;
   arr.sort((a,b) => a - b)
   for (let i = 0; i < arr.length; i++) {

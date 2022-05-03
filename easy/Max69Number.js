@@ -2,7 +2,7 @@
 
 // Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6).
 
-var maximum69Number  = function(num) {
+const maximum69Number  = function(num) {
   num += '';
   let splitNum = num.split('');
   for (let i = 0; i < splitNum.length; i++) {

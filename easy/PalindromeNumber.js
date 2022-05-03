@@ -4,7 +4,7 @@
 
 // For example, 121 is a palindrome while 123 is not.
 
-var isPalindrome = function(x) {
+const isPalindrome = function(x) {
   x = x + '';
   for (let i = 0; i < (x.length)/2; i++) {
     if (x[i] !== x[x.length - 1 - i]) {

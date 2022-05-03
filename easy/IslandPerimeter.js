@@ -6,7 +6,7 @@
 
 // The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
 
-var islandPerimeter = function(grid) {
+const islandPerimeter = function(grid) {
   let periCount = 0;
   for (let i = 0; i < grid.length; i++) {
     for (let j = 0; j < grid[i].length; j++) {

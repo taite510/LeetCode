@@ -5,7 +5,7 @@
 // x if x >= 0.
 // -x if x < 0.
 
-var countKDifference = function(nums, k) {
+const countKDifference = function(nums, k) {
   let count = 0;
   for (let i = 0; i < nums.length; i++) {
     for (let j = nums.length - 1; j > i; j--) {

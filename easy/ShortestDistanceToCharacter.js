@@ -2,9 +2,9 @@
 
 // The distance between two indices i and j is abs(i - j), where abs is the absolute value function.
 
-var shortestToChar = function(s, c) {
-  let arrOfC = [];
-  let resultArr = [];
+const shortestToChar = function(s, c) {
+  const arrOfC = [];
+  const resultArr = [];
   for (let i = 0; i < s.length; i++) {
     if (s[i] === c) {
       arrOfC.push(i)
@@ -27,7 +27,7 @@ var shortestToChar = function(s, c) {
   return resultArr;
 };
 
-let testS = "loveleetcode";
-let testC = "e";
+const testS = "loveleetcode";
+const testC = "e";
 
 console.log(shortestToChar(testS, testC))
