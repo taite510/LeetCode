@@ -2,9 +2,9 @@
 
 // Return the number of possible non-empty sequences of letters you can make using the letters printed on those tiles.
 
-var numTilePossibilities = function(tiles) {
-  let obj = {};
-  let tileBuilder = (remaining, current) => {
+const numTilePossibilities = function(tiles) {
+  const obj = {};
+  const tileBuilder = (remaining, current) => {
     if (current) {
       obj[current] = true;
     } else {

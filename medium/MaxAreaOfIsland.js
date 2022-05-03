@@ -4,10 +4,10 @@
 
 // Return the maximum area of an island in grid. If there is no island, return 0.
 
-var maxAreaOfIsland = function(grid) {
+const maxAreaOfIsland = function(grid) {
   let maxArea = 0;
   let currentArea = 0;
-  let removeIsland = (y, x) => {
+  const removeIsland = (y, x) => {
     if (grid[y][x] === 1) {
       grid[y][x] = 0;
       currentArea++

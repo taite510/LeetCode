@@ -9,7 +9,7 @@
 
 // Given a 0-indexed integer array plants of n integers, where plants[i] is the amount of water the ith plant needs, and an integer capacity representing the watering can capacity, return the number of steps needed to water all the plants.
 
-var wateringPlants = function(plants, capacity) {
+const wateringPlants = function(plants, capacity) {
   let steps = 0;
   let currentCapacity = capacity;
   for (let i = 0; i < plants.length; i++) {

@@ -4,9 +4,9 @@
 
 // You may assume all four edges of the grid are all surrounded by water.
 
-var numIslands = function(grid) {
+const numIslands = function(grid) {
   let result = 0;
-  let removeIsland = (y, x) => {
+  const removeIsland = (y, x) => {
     if (grid[y][x] === '1') {
       grid[y][x] = '0';
     } else {
@@ -37,7 +37,7 @@ var numIslands = function(grid) {
 };
 
 
-let testGrid = [
+const testGrid = [
   ["1","1","1","1","0"],
   ["1","1","0","1","0"],
   ["1","1","0","0","0"],

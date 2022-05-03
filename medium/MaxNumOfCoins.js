@@ -9,7 +9,7 @@
 
 // Return the maximum number of coins that you can have.
 
-var maxCoins = function(piles) {
+const maxCoins = function(piles) {
   let coins = 0;
   piles = piles.sort((a, b) => b - a)
   for (let i = 0; i < piles.length / 3; i++) {

@@ -8,9 +8,9 @@
 // @param {number} k
 // @return {number[][]}
 
- var kClosest = function(points, k) {
-  let distanceArr = [];
-  let resultArr = [];
+const kClosest = function(points, k) {
+  const distanceArr = [];
+  const resultArr = [];
   for (let i = 0; i < points.length; i++) {
     distanceArr.push([Math.sqrt(Math.pow((points[i][0] - 0), 2) + Math.pow((points[i][1] - 0), 2)), i])
   }

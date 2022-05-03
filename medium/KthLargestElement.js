@@ -6,7 +6,7 @@
 // @param {number} k
 // @return {number}
 
-var findKthLargest = function(nums, k) {
+const findKthLargest = function(nums, k) {
   nums.sort((a,b) => {
     if (a > b) {
       return -1;

@@ -2,8 +2,8 @@
 
 // You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
 
-var rotate = function(matrix) {
-  let n = matrix.length
+const rotate = function(matrix) {
+  const n = matrix.length
   if (n === 1) {
     return;
   }
@@ -20,5 +20,5 @@ var rotate = function(matrix) {
   return
 };
 
-let testMatrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
+const testMatrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
 rotate(testMatrix)

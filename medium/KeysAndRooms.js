@@ -4,9 +4,9 @@
 
 // Given an array rooms where rooms[i] is the set of keys that you can obtain if you visited room i, return true if you can visit all the rooms, or false otherwise.
 
-var canVisitAllRooms = function(rooms) {
-  let keys = {};
-  let openDoor = (key) => {
+const canVisitAllRooms = function(rooms) {
+  const keys = {};
+  const openDoor = (key) => {
     if (keys[key] === undefined) {
       keys[key] = true;
       for (let i = 0; i < rooms[key].length; i++) {

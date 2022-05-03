@@ -6,7 +6,7 @@
 
 // Notice that you may not slant the container.
 
-var maxArea = function(height) {
+const maxArea = function(height) {
   let result = 0;
   let left = 0;
   let right = height.length - 1;

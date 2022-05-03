@@ -25,8 +25,8 @@
 //   return arr[arr.length - 1]
 // };
 
-var longestValidParentheses = function(s) {
-  var arr = [0]
+const longestValidParentheses = function(s) {
+  const arr = [0]
   var currentLength = 0;
   for (let i = 0; i < s.length; i++) {
     if (s[i] === '(') {
@@ -67,5 +67,5 @@ var longestValidParentheses = function(s) {
   return arr[0]
 }
 
-let string = "()(())"
+const string = "()(())"
 console.log(longestValidParentheses(string))

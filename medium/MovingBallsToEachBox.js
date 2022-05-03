@@ -6,8 +6,8 @@
 
 // Each answer[i] is calculated considering the initial state of the boxes.
 
-var minOperations = function(boxes) {
-  let resultArr = [];
+const minOperations = function(boxes) {
+  const resultArr = [];
   boxes = boxes.split('');
   for (let i = 0; i < boxes.length; i++) {
     let moves = 0;
