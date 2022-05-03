@@ -8,7 +8,7 @@
 // For example, if s = "()))", you can insert an opening parenthesis to be "(()))" or a closing parenthesis to be "())))".
 // Return the minimum number of moves required to make s valid.
 
-var minAddToMakeValid = function(s) {
+const minAddToMakeValid = function(s) {
   let count = 0;
   let addCount = 0;
   for (let i = 0; i < s.length; i++) {

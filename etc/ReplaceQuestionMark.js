@@ -1,7 +1,7 @@
 // Replace all ? found in a string with a letter, but the letter cannot be the same as any adjacent letter
 
 function solution(riddle) {
-  let letters = ['a','b','c'];
+  const letters = ['a','b','c'];
   for (let i = 0; i < riddle.length; i++) {
       if (riddle[i] === '?') {
           for (let j = 0; j < letters.length; j++) {

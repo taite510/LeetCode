@@ -2,9 +2,9 @@
 
 // Notice that the solution set must not contain duplicate triplets.
 
-var threeSum = function(nums) {
-  let arr = [];
-  let obj = {};
+const threeSum = function(nums) {
+  const arr = [];
+  const obj = {};
   nums = nums.sort((a,b) => a - b);
   for (let i = 0; i < nums.length - 2; i++) {
     for (let j = i + 1; j < nums.length - 1; j++) {

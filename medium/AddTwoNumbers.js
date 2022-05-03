@@ -2,9 +2,9 @@
 
 // You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
-var addTwoNumbers = function(l1, l2) {
-  let arr1 = [];
-  let arr2 = [];
+const addTwoNumbers = function(l1, l2) {
+  const arr1 = [];
+  const arr2 = [];
   let head1 = l1;
   let head2 = l2;
   while (head1 !== null) {
@@ -17,7 +17,7 @@ var addTwoNumbers = function(l1, l2) {
   }
   arr1 = arr1.join('');
   arr2 = arr2.join('');
-  let combined = (+arr1 + +arr2 + '').split('')
+  const combined = (+arr1 + +arr2 + '').split('')
   function ListNode(val, next) {
     this.val = (val===undefined ? 0 : val)
     this.next = (next===undefined ? null : next)
@@ -35,7 +35,7 @@ var addTwoNumbers = function(l1, l2) {
   return node
 };
 
-var list1 = {
+const list1 = {
   value: 9,
   next: {
     value: 1,
@@ -45,7 +45,7 @@ var list1 = {
     }
   }
 }
-var list2 = {
+const list2 = {
   value: 1,
   next: {
     value: 2,

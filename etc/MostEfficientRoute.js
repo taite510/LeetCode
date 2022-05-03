@@ -1,7 +1,7 @@
 // finds the route pairs with the most efficient route
 
 function routePairs(maxTravelDist, forwardRouteList, returnRouteList) {
-  let pairs = [];
+  const pairs = [];
   let distance = 0;
   for (let i = 0; i < forwardRouteList.length; i++) {
       for (let j = 0; j < returnRouteList.length; j++) {
@@ -18,5 +18,5 @@ function routePairs(maxTravelDist, forwardRouteList, returnRouteList) {
   }
   return pairs
 }
-debugger
+
 console.log(routePairs(10000,[[1,3000],[2,5000],[3,7000],[4,10000]],[[1,2000],[2,3000],[3,4000],[4,5000]]))

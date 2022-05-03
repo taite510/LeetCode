@@ -1,6 +1,6 @@
 // Given a string s, return the longest palindromic substring in s.
 
-var isPalindrome = function(x) {
+const isPalindrome = function(x) {
   for (let i = 0; i < (x.length)/2; i++) {
     if (x[i] !== x[x.length - 1 - i]) {
         return false;
@@ -8,9 +8,9 @@ var isPalindrome = function(x) {
   }
   return true;
 };
-var longestPalindrome = function(s) {
+const longestPalindrome = function(s) {
   let palin = ''
-  let func = (string) => {
+  const func = (string) => {
     if (isPalindrome(string)) {
       palin = string
     } else {

@@ -2,8 +2,8 @@
 
 // Return a list of integers representing the size of these parts.
 
-var partitionLabels = function(s) {
-  let arr = [], letterStart = {}, letterEnd = {};
+const partitionLabels = function(s) {
+  const arr = [], letterStart = {}, letterEnd = {};
   for (let j = s.length - 1; j >= 0; j--) {
     if (!letterEnd[s[j]]) {
       letterEnd[s[j]] = j;
