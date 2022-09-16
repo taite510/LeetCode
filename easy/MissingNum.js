@@ -11,3 +11,5 @@ const missingNumber = function(nums) {
   }
   return i;
 };
+
+console.log(missingNumber([3,0,7,2,1,5,6]) === 4)
