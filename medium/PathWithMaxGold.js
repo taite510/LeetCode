@@ -44,7 +44,5 @@ const getMaximumGold = function (grid) {
   }
   return max;
 };
-debugger
-console.log(getMaximumGold([[0,6,0],[5,8,7],[0,9,0]]))
 
 console.log(getMaximumGold([[0,6,0],[5,8,7],[0,9,0]]))
