@@ -1,7 +1,6 @@
 # Given a binary array nums, return the maximum number of consecutive 1's in the array.
 
 def findMaxConsecutiveOnes(nums):
-    nums.append(0)
     count = 0
     maxOnes = 0
     for i in range(len(nums)):

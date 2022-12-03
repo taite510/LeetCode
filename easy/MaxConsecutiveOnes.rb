@@ -3,7 +3,6 @@
 def find_max_consecutive_ones(nums)
   curr = 0
   max = 0
-  nums.append(0)
   nums.each do |num|
       if num == 1
           curr += 1
