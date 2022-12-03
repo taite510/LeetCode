@@ -8,7 +8,7 @@ def largest_altitude(gain)
   gain.each do |num|
       curr += num
       if curr > max
-          max = [max, curr].max
+          max = curr
       end
   end
   return max
